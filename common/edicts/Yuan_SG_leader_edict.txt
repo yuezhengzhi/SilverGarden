@@ -1,0 +1,312 @@
+#加速
+yuan_sg_leader_edict = {
+    length = -1
+    icon = GFX_edict_type_policy
+    resources = {
+        category = edicts
+        cost = {
+            influence = 10
+            multiplier = value:edict_size_effect
+        }
+        upkeep = {
+            influence = 0.5
+            multiplier = value:edict_size_effect
+        }
+    }
+    potential = {
+        leader = {
+            has_ruler_trait = leader_trait_sg_orthis
+        }
+    }
+    allow = {
+        not = {
+            has_edict = yuan_sg_leader_edict_1
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                not = {
+                    has_country_flag = yuan_leader_node
+                }
+            }
+            set_country_flag = yuan_leader_node
+            country_event = {
+                id = yuan_leader.1
+            }
+        }
+    }
+    modifier = {
+        custom_tooltip = yuan_sg_leader_edict_effect
+    }
+    ai_weight = {
+        weight = 0
+    }
+}
+#暂停
+yuan_sg_leader_edict_1 = {
+    length = -1
+    icon = GFX_edict_type_policy
+    resources = {
+        category = edicts
+        cost = {
+            influence = 10
+            multiplier = value:edict_size_effect
+        }
+        upkeep = {
+            influence = 0.5
+            multiplier = value:edict_size_effect
+        }
+    }
+    potential = {
+        leader = {
+            has_ruler_trait = leader_trait_sg_orthis
+        }
+    }
+    allow = {
+        not = {
+            has_edict = yuan_sg_leader_edict
+        }
+    }
+    modifier = {
+        custom_tooltip = yuan_sg_leader_edict_1_effect
+    }
+    ai_weight = {
+        weight = 0
+    }
+}
+#关闭 舰队
+yuan_sg_leader_edict_2 = {
+    length = -1
+    icon = GFX_edict_type_policy
+    resources = {
+        category = edicts
+        cost = {
+            influence = 10
+            multiplier = value:edict_size_effect
+        }
+        upkeep = {
+            influence = 0.5
+            multiplier = value:edict_size_effect
+        }
+    }
+    potential = {
+        leader = {
+            has_ruler_trait = leader_trait_sg_orthis
+        }
+    }
+    effect = {
+        hidden_effect = {
+            every_owned_leader = {
+                limit = {
+                    # has_trait = subclass_commander_admiral
+                    has_leader_flag = yuan_leader_military_ship
+                    nor = {
+                        has_leader_flag = renowned_leader
+                        has_leader_flag = legendary_leader
+                    }
+                }
+                kill_leader = {
+                    show_notification = no
+                }
+            }
+        }
+    }
+    modifier = {
+        custom_tooltip = yuan_sg_leader_edict_2_effect
+    }
+    ai_weight = {
+        weight = 0
+    }
+}
+#关闭 运输船
+yuan_sg_leader_edict_3 = {
+    length = -1
+    icon = GFX_edict_type_policy
+    resources = {
+        category = edicts
+        cost = {
+            influence = 10
+            multiplier = value:edict_size_effect
+        }
+        upkeep = {
+            influence = 0.5
+            multiplier = value:edict_size_effect
+        }
+    }
+    potential = {
+        leader = {
+            has_ruler_trait = leader_trait_sg_orthis
+        }
+    }
+    effect = {
+        hidden_effect = {
+            every_owned_leader = {
+                limit = {
+                    # has_trait = subclass_commander_admiral
+                    has_leader_flag = yuan_leader_fleet_ship
+                    nor = {
+                        has_leader_flag = renowned_leader
+                        has_leader_flag = legendary_leader
+                    }
+                }
+                kill_leader = {
+                    show_notification = no
+                }
+            }
+        }
+    }
+    modifier = {
+        custom_tooltip = yuan_sg_leader_edict_3_effect
+    }
+    ai_weight = {
+        weight = 0
+    }
+}
+#关闭 科研船
+yuan_sg_leader_edict_4 = {
+    length = -1
+    icon = GFX_edict_type_policy
+    resources = {
+        category = edicts
+        cost = {
+            influence = 10
+            multiplier = value:edict_size_effect
+        }
+        upkeep = {
+            influence = 0.5
+            multiplier = value:edict_size_effect
+        }
+    }
+    potential = {
+        leader = {
+            has_ruler_trait = leader_trait_sg_orthis
+        }
+    }
+    effect = {
+        hidden_effect = {
+            every_owned_leader = {
+                limit = {
+                    # or = {
+                    #     has_trait = subclass_scientist_explorer
+                    #     has_trait = subclass_scientist_scholar
+                    # }
+                    has_leader_flag = yuan_leader_science_ship
+                    nor = {
+                        has_leader_flag = renowned_leader
+                        has_leader_flag = legendary_leader
+                    }
+                    nand = {
+                        exists = fleet
+                        fleet = {
+                            has_fleet_order = explore_astral_rift_fleet_order
+                        }
+                    }
+                }
+                kill_leader = {
+                    show_notification = no
+                }
+            }
+        }
+    }
+    modifier = {
+        custom_tooltip = yuan_sg_leader_edict_4_effect
+    }
+    ai_weight = {
+        weight = 0
+    }
+}
+#关闭 殖民地
+yuan_sg_leader_edict_5 = {
+    length = -1
+    icon = GFX_edict_type_policy
+    resources = {
+        category = edicts
+        cost = {
+            influence = 10
+            multiplier = value:edict_size_effect
+        }
+        upkeep = {
+            influence = 0.5
+            multiplier = value:edict_size_effect
+        }
+    }
+    potential = {
+        leader = {
+            has_ruler_trait = leader_trait_sg_orthis
+        }
+    }
+    effect = {
+        hidden_effect = {
+            every_owned_leader = {
+                limit = {
+                    # or = {
+                    #     has_trait = subclass_scientist_governor
+                    #     has_trait = subclass_commander_governor
+                    #     has_trait = subclass_official_governor
+                    # }
+                    has_leader_flag = yuan_leader_plant
+                    nor = {
+                        has_leader_flag = renowned_leader
+                        has_leader_flag = legendary_leader
+                    }
+                }
+                kill_leader = {
+                    show_notification = no
+                }
+            }
+        }
+    }
+    modifier = {
+        custom_tooltip = yuan_sg_leader_edict_5_effect
+    }
+    ai_weight = {
+        weight = 0
+    }
+}
+#关闭 殖民地陆军
+yuan_sg_leader_edict_6 = {
+    length = -1
+    icon = GFX_edict_type_policy
+    resources = {
+        category = edicts
+        cost = {
+            influence = 10
+            multiplier = value:edict_size_effect
+        }
+        upkeep = {
+            influence = 0.5
+            multiplier = value:edict_size_effect
+        }
+    }
+    potential = {
+        leader = {
+            has_ruler_trait = leader_trait_sg_orthis
+        }
+    }
+    effect = {
+        hidden_effect = {
+            every_owned_leader = {
+                limit = {
+                    # or = {
+                    #     has_trait = subclass_commander_governor
+                    # }
+                    has_leader_flag = yuan_leader_army
+                    nor = {
+                        has_leader_flag = renowned_leader
+                        has_leader_flag = legendary_leader
+                    }
+                }
+                kill_leader = {
+                    show_notification = no
+                }
+            }
+        }
+    }
+    modifier = {
+        custom_tooltip = yuan_sg_leader_edict_6_effect
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

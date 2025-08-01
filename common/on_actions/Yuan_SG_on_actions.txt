@@ -1,0 +1,6 @@
+on_game_start_country  = {
+    events = {
+        yuan_sg_leader.1
+        yuan_sg_leader.2
+    }
+}

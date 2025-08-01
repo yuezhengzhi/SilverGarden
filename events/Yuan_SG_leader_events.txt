@@ -1,0 +1,169 @@
+namespace = yuan_sg_leader
+# 领袖创建
+country_event = {
+    id = yuan_sg_leader.1
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        leader = {
+            has_ruler_trait = leader_trait_sg_orthis
+        }
+        is_ai = no
+    }
+    immediate = {
+        country_event = {
+            id = yuan_sg_leader.1
+            days = 60
+            random = 3
+        }
+        if = {
+            limit = {
+                NOT = {
+                    has_edict = yuan_sg_leader_edict_1
+                }
+            }
+            # 舰队领袖
+            if = {
+                limit = {
+                    NOT = {
+                        has_edict =yuan_sg_leader_edict_2
+                    }
+                }
+                yuan_sg_leader_military_ship_effect = yes
+                if = {
+                    limit = {
+                        has_edict =yuan_sg_leader_edict
+                    }
+                    yuan_sg_leader_military_ship_effect = yes
+                }
+            }
+            # 陆军领袖
+            if = {
+                limit = {
+                    not = {
+                        has_edict = yuan_sg_leader_edict_3
+                    }
+                }
+                yuan_sg_leader_army_ship_effect = yes
+                if = {
+                    limit = {
+                        has_edict = yuan_sg_leader_edict
+                    }
+                    yuan_sg_leader_army_ship_effect = yes
+                }
+            }
+            # 科研船领袖
+            if = {
+                limit = {
+                    not = {
+                        has_edict = yuan_sg_leader_edict_4
+                    }
+                }
+                yuan_sg_leader_science_ship_effect = yes
+                if = {
+                    limit = {
+                        has_edict = yuan_sg_leader_edict
+                    }
+                    yuan_sg_leader_science_ship_effect = yes
+                }
+            }
+            # 星球领袖
+            if = {
+                limit = {
+                    not = {
+                        has_edict = yuan_sg_leader_edict_5
+                    }
+                }
+                yuan_sg_leader_planet_effect = yes
+                if = {
+                    limit = {
+                        has_edict = yuan_sg_leader_edict
+                    }
+                    yuan_sg_leader_planet_effect = yes
+                }
+            }
+            # 星球领袖-陆军司令
+            if = {
+                limit = {
+                    not = {
+                        has_edict = yuan_sg_leader_edict_6
+                    }
+                }
+                yuan_sg_leader_army_effect = yes
+                if = {
+                    limit = {
+                        has_edict = yuan_sg_leader_edict
+                    }
+                    yuan_sg_leader_army_effect = yes
+                }
+            }
+        }
+        # 同步等级
+        # yuan_sg_leader_level_effect = yes
+        # 空闲领袖清理
+        yuan_sg_leader_idle_effect = yes
+    }
+}
+# 统治者肖像替换
+country_event = {
+    id = yuan_sg_leader.2
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        leader = {
+            has_ruler_trait = leader_trait_sg_orthis
+        }
+        is_ai = no
+    }
+    immediate = {
+        ruler = {
+            change_leader_portrait = yuan_sg_ruler_orthis_0
+        }
+    }
+}
+# 领袖特质修复
+country_event = {
+    id = yuan_sg_leader.3
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+    }
+    immediate = {
+        if = {
+            limit = {
+                # 时与空特质修复 待定检测对象
+                # has_origin = time
+            }
+            ruler = {
+                save_global_event_target_as = origit_time_ruler
+                add_trait = {
+                    trait = leader_trait_ruler_time
+                    show_message = no
+                }
+            }
+        }
+        if = {
+            limit = {
+                OR = {
+                    has_authority = auth_dictatorial
+                    has_authority = auth_imperial
+                    # has_authority = auth_hive_mind
+                    # has_authority = auth_machine_intelligence
+                }
+                # owner_main_species = {
+                #     OR = {
+                #         is_archetype = MACHINE
+                #         is_archetype = ROBOT
+                #     }
+                # }
+            }
+            ruler = {
+                add_trait = {
+                    trait = leader_trait_orthis
+                    show_message = no
+                }
+            }
+        }
+    }
+}

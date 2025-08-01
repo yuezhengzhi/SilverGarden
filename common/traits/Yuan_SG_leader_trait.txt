@@ -1,4 +1,4 @@
-leader_trait_SG_orthis = {
+leader_trait_sg_orthis = {
     starting_ruler_trait = yes
     cost = 1
     immortal_leaders = yes
@@ -25,7 +25,7 @@ leader_trait_SG_orthis = {
     }
 }
 
-leader_trait_SG_artifact = {
+leader_trait_sg_artifact = {
     immortal_leaders = yes
     initial = no
     randomized = no
@@ -41,7 +41,7 @@ leader_trait_SG_artifact = {
 
     # 通用效果
     self_modifier = {
-        species_leader_exp_gain = -10
+        # species_leader_exp_gain = -10
         leaders_unity_upkeep_mult = -1
     }
     triggered_self_modifier = {

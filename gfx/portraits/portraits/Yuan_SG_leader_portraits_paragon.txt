@@ -1,0 +1,5 @@
+portraits = {
+    yuan_sg_ruler_orthis_0 = {
+        texturefile = "gfx/models/portraits/orthis/orchis_1.dds"
+    }
+}

@@ -1,0 +1,28 @@
+# 用于对开局更换统治者/中途更换统治者内容的兼容
+yuan_sg_ruler_edict = {
+    length = -1
+    icon = GFX_edict_type_policy
+    resources = {
+        category = edicts
+        cost = {
+            influence = 10
+            multiplier = value:edict_size_effect
+        }
+        upkeep = {
+            influence = 0.5
+            multiplier = value:edict_size_effect
+        }
+    }
+    potential = {
+        ruler = {
+            NOR = {
+                has_ruler_trait = leader_trait_sg_orthis
+            }
+        }
+    }
+    effect = {
+        country_event = {
+            id = yuan_sg_leader.3
+        }
+    }
+}
