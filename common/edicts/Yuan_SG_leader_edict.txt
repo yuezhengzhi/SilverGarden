@@ -32,7 +32,7 @@ yuan_sg_leader_edict = {
             }
             set_country_flag = yuan_leader_node
             country_event = {
-                id = yuan_leader.1
+                id = yuan_sg_leader.1
             }
         }
     }
