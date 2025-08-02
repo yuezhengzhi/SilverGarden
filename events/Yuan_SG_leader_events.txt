@@ -104,6 +104,8 @@ country_event = {
         yuan_sg_leader_idle_effect = yes
         # 星球领袖转换
         yuan_sg_leader_planet_class_effect = yes
+        # 内阁转换
+        yuan_sg_leader_council_effect = yes
     }
 }
 # 统治者肖像替换
