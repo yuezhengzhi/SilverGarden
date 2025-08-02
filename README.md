@@ -3,7 +3,7 @@
 ## 项目简介 / Introduction
 SilverGarden 是一款为 Stellaris（群星）设计的模组，用于实现作者在游玩过程中的一些(yi)小(xiang)巧(tian)思(kai)
 
-## 目前主要功能 / Features
+## 主要功能 / Features
 - 新增领导者特质及其特殊机制
 - 领导者相关的专属事件与效果
 - 自定义领导者创建、赋能与成长机制
