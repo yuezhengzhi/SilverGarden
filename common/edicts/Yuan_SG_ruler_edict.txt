@@ -24,5 +24,9 @@ yuan_sg_ruler_edict = {
         country_event = {
             id = yuan_sg_leader.3
         }
+        country_event = {
+            id = yuan_sg_leader.2
+            days = 5
+        }
     }
 }
