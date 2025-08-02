@@ -1,0 +1,4 @@
+l_simp_chinese:
+ yuan_sg_leader_official_node: "行政节点"
+ yuan_sg_leader_scientist_node: "科研节点"
+ yuan_sg_leader_commander_node: "军事节点"
