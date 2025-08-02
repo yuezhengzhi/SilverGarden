@@ -27,10 +27,10 @@ yuan_sg_leader_edict = {
         if = {
             limit = {
                 not = {
-                    has_country_flag = yuan_leader_node
+                    has_country_flag = yuan_sg_leader_node
                 }
             }
-            set_country_flag = yuan_leader_node
+            set_country_flag = yuan_sg_leader_node
             country_event = {
                 id = yuan_sg_leader.1
             }
@@ -100,7 +100,7 @@ yuan_sg_leader_edict_2 = {
             every_owned_leader = {
                 limit = {
                     # has_trait = subclass_commander_admiral
-                    has_leader_flag = yuan_leader_military_ship
+                    has_leader_flag = yuan_sg_leader_military_ship
                     nor = {
                         has_leader_flag = renowned_leader
                         has_leader_flag = legendary_leader
@@ -144,7 +144,7 @@ yuan_sg_leader_edict_3 = {
             every_owned_leader = {
                 limit = {
                     # has_trait = subclass_commander_admiral
-                    has_leader_flag = yuan_leader_fleet_ship
+                    has_leader_flag = yuan_sg_leader_fleet_ship
                     nor = {
                         has_leader_flag = renowned_leader
                         has_leader_flag = legendary_leader
@@ -191,7 +191,7 @@ yuan_sg_leader_edict_4 = {
                     #     has_trait = subclass_scientist_explorer
                     #     has_trait = subclass_scientist_scholar
                     # }
-                    has_leader_flag = yuan_leader_science_ship
+                    has_leader_flag = yuan_sg_leader_science_ship
                     nor = {
                         has_leader_flag = renowned_leader
                         has_leader_flag = legendary_leader
@@ -245,7 +245,7 @@ yuan_sg_leader_edict_5 = {
                     #     has_trait = subclass_commander_governor
                     #     has_trait = subclass_official_governor
                     # }
-                    has_leader_flag = yuan_leader_plant
+                    has_leader_flag = yuan_sg_leader_plant
                     nor = {
                         has_leader_flag = renowned_leader
                         has_leader_flag = legendary_leader
@@ -291,7 +291,7 @@ yuan_sg_leader_edict_6 = {
                     # or = {
                     #     has_trait = subclass_commander_governor
                     # }
-                    has_leader_flag = yuan_leader_army
+                    has_leader_flag = yuan_sg_leader_army
                     nor = {
                         has_leader_flag = renowned_leader
                         has_leader_flag = legendary_leader
