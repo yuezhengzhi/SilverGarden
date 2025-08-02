@@ -9,7 +9,7 @@ yuan_sg_leader_planet_official_decisions = {
     }
     potential = {
         ruler = {
-            has_trait = leader_trait_orthis
+            has_trait = leader_trait_sg_orthis
         }
     }
     allow = {
@@ -42,7 +42,7 @@ yuan_sg_leader_planet_scientist_decisions = {
     }
     potential = {
         ruler = {
-            has_trait = leader_trait_orthis
+            has_trait = leader_trait_sg_orthis
         }
     }
     allow = {
@@ -74,7 +74,7 @@ yuan_sg_leader_planet_commander_decisions = {
     }
     potential = {
         ruler = {
-            has_trait = leader_trait_orthis
+            has_trait = leader_trait_sg_orthis
         }
     }
     allow = {
@@ -106,7 +106,7 @@ yuan_sg_leader_planet_none_decisions = {
     }
     potential = {
         ruler = {
-            has_trait = leader_trait_orthis
+            has_trait = leader_trait_sg_orthis
         }
     }
     allow = {
