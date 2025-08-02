@@ -1,0 +1,127 @@
+# 将星球总督标签设置为行政官
+yuan_sg_leader_planet_official_decisions = {
+    owned_planets_only = yes
+    resources = {
+        category = decisions
+        cost = {
+            influence = 10
+        }
+    }
+    potential = {
+        ruler = {
+            has_trait = leader_trait_orthis
+        }
+    }
+    allow = {
+        from = {
+            is_ai = no
+        }
+    }
+    effect = {
+        set_planet_flag = yuan_sg_leader_planet_official
+        remove_planet_flag = yuan_sg_leader_planet_none
+        remove_planet_flag = yuan_sg_leader_planet_scientist
+        remove_planet_flag = yuan_sg_leader_planet_commander
+        planet = {
+            # yuan_sg_leader_planet_effect =yes
+        }
+    }
+    ai_weight = {
+        weight = 0
+    }
+}
+# 将星球总督标签设置为科学官
+yuan_sg_leader_planet_scientist_decisions = {
+    owned_planets_only = yes
+    enactment_time = 0
+    resources = {
+        category = decisions
+        cost = {
+            influence = 10
+        }
+    }
+    potential = {
+        ruler = {
+            has_trait = leader_trait_orthis
+        }
+    }
+    allow = {
+        from = {
+            is_ai = no
+        }
+    }
+    effect = {
+        set_planet_flag = yuan_sg_leader_planet_scientist
+        remove_planet_flag = yuan_sg_leader_planet_official
+        remove_planet_flag = yuan_sg_leader_planet_commander
+        remove_planet_flag = yuan_sg_leader_planet_none
+        # yuan_sg_leader_planet_effect =yes
+    }
+    ai_weight = {
+        weight = 0
+    }
+}
+# 将星球总督标签设置为军事官
+yuan_sg_leader_planet_commander_decisions = {
+    owned_planets_only = yes
+
+    enactment_time = 0
+    resources = {
+        category = decisions
+        cost = {
+            influence = 10
+        }
+    }
+    potential = {
+        ruler = {
+            has_trait = leader_trait_orthis
+        }
+    }
+    allow = {
+        from = {
+            is_ai = no
+        }
+    }
+    effect = {
+        set_planet_flag = yuan_sg_leader_planet_commander
+        remove_planet_flag = yuan_sg_leader_planet_official
+        remove_planet_flag = yuan_sg_leader_planet_scientist
+        remove_planet_flag = yuan_sg_leader_planet_none
+        # yuan_sg_leader_planet_effect =yes
+    }
+    ai_weight = {
+        weight = 0
+    }
+}
+# 将星球总督标签设置为无
+yuan_sg_leader_planet_none_decisions = {
+    owned_planets_only = yes
+
+    enactment_time = 0
+    resources = {
+        category = decisions
+        cost = {
+            influence = 10
+        }
+    }
+    potential = {
+        ruler = {
+            has_trait = leader_trait_orthis
+        }
+    }
+    allow = {
+        from = {
+            is_ai = no
+        }
+    }
+    effect = {
+        remove_planet_flag = yuan_sg_leader_planet_commander
+        remove_planet_flag = yuan_sg_leader_planet_official
+        remove_planet_flag = yuan_sg_leader_planet_scientist
+        set_planet_flag = yuan_sg_leader_planet_none
+        yuan_sg_leader_planet_effect =yes
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

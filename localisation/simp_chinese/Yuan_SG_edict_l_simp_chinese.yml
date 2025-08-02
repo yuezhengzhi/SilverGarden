@@ -20,3 +20,5 @@
  yuan_sg_leader_edict_5_effect: "销毁所有已部署于殖民地的管理人偶并在持续期间暂停其部署"
  yuan_sg_leader_edict_6_effect: "销毁所有已部署于殖民地的陆军人偶并在持续期间暂停其部署"
  yuan_sg_leader_edict_effect: "加速向空余领袖槽位部署人偶"
+ edict_yuan_sg_ruler_edict: "重新发放统治者特质"
+ edict_yuan_sg_ruler_edict_desc: "重新发放统治者特质"

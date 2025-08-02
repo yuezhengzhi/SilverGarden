@@ -41,7 +41,7 @@ leader_trait_sg_artifact = {
 
     # 通用效果
     self_modifier = {
-        # species_leader_exp_gain = -10
+        species_leader_exp_gain = 1
         leaders_unity_upkeep_mult = -1
     }
     triggered_self_modifier = {
@@ -122,8 +122,8 @@ leader_trait_sg_artifact = {
             leader_class = official
         }
         planet_building_capacity_add = 0.25
-        planet_clear_blocker_speed_mult = 0.02
-        planet_decision_enact_speed_mult = 0.05
+        planet_clear_blocker_speed_mult = 0.25
+        planet_decision_enact_speed_mult = 0.25
         planet_building_build_speed_mult = 0.1
         planet_max_districts_add = 1
         mult = trigger:has_total_skill
@@ -145,6 +145,37 @@ leader_trait_sg_artifact = {
             leader_class = official
         }
         resolutions_cost_mult = -0.02
+        mult = trigger:has_total_skill
+    }
+    # 内阁-科学官
+    triggered_councilor_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = scientist
+        }
+        all_technology_research_speed = 0.01
+        mult = trigger:has_total_skill
+    }
+    # 内阁-行政官
+    triggered_councilor_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = official
+        }
+        starbase_outpost_cost_mult = -0.05
+        country_starbase_influence_cost_mult = -0.05
+        mult = trigger:has_total_skill
+    }
+    # 内阁-指挥官
+    triggered_councilor_modifier = {
+        potential = {
+            is_ruler = no
+            leader_class = commander
+        }
+        ship_corvette_cost_mult = -0.1
+        ship_destroyer_cost_mult = -0.1
+        ship_cruiser_cost_mult = -0.1
+        ship_battleship_cost_mult = -0.1
         mult = trigger:has_total_skill
     }
 }
