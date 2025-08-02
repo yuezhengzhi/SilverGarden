@@ -134,8 +134,8 @@ country_event = {
     immediate = {
         if = {
             limit = {
-                # 时与空特质修复 待定检测对象
-                # has_origin = time
+                # 时与空特质修复
+                has_origin_time = yes
             }
             ruler = {
                 save_global_event_target_as = origit_time_ruler
