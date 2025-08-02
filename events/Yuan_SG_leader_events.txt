@@ -162,7 +162,7 @@ country_event = {
             }
             ruler = {
                 add_trait = {
-                    trait = leader_trait_orthis
+                    trait = leader_trait_sg_orthis
                     show_message = no
                 }
             }
