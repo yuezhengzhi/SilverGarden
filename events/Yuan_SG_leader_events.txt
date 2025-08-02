@@ -136,11 +136,28 @@ country_event = {
     immediate = {
         if = {
             limit = {
-                # 时与空特质修复
-                has_origin_time = yes
+                OR = {
+                    has_origin = origin_time
+                    has_origin = origin_time_end
+                    has_origin = origin_time_end_bad
+                    has_origin = origin_time_beginning
+                    has_origin = origin_time_beginning_bad
+                    has_origin = origin_timesingularity
+                    has_origin = origin_timesingularity_bad
+                    has_origin = origin_endless_time_virtuality
+                    has_origin = origin_endless_time_synthetic
+                    has_origin = origin_endless_time_cybernetic
+                    has_origin = origin_endless_time_genetic
+                    has_origin = origin_endless_time_psionic
+                }
+                ruler = {
+                    not = {
+                        has_ruler_trait = leader_trait_ruler_time
+                    }
+                }
             }
             ruler = {
-                save_global_event_target_as = origit_time_ruler
+                save_global_event_target_as = origin_time_ruler
                 add_trait = {
                     trait = leader_trait_ruler_time
                     show_message = no
@@ -154,6 +171,11 @@ country_event = {
                     has_authority = auth_imperial
                     # has_authority = auth_hive_mind
                     # has_authority = auth_machine_intelligence
+                }
+                ruler = {
+                    not = {
+                        has_ruler_trait = leader_trait_sg_orthis
+                    }
                 }
                 # owner_main_species = {
                 #     OR = {
