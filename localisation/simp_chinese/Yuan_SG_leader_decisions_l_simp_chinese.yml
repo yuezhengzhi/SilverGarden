@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+ yuan_sg_leader_planet_official_decisions: "行政总督"
+ yuan_sg_leader_planet_official_decisions_desc: "将人偶属性调节至行政总督"
+ yuan_sg_leader_planet_scientist_decisions: "科研总督"
+ yuan_sg_leader_planet_scientist_decisions_desc: "将人偶属性调节至科研总督"
+ yuan_sg_leader_planet_commander_decisions: "军事总督"
+ yuan_sg_leader_planet_commander_decisions_desc: "将人偶属性调节至军事总督"
+ yuan_sg_leader_planet_none_decisions: "自主星球"
+ yuan_sg_leader_planet_none_decisions_desc: "销毁星球上的人偶"
