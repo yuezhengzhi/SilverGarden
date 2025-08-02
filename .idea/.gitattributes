@@ -1,0 +1,5 @@
+# 仅将 descriptor.mod 识别为文本
+descriptor.mod linguist-language=Text
+
+# 其他位置的真实 AMPL 文件仍会被识别（如果有）
+#*.mod linguist-detectable=true
