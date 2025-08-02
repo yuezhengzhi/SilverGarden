@@ -112,7 +112,7 @@ leader_trait_sg_artifact = {
         planet_jobs_physics_research_produces_add = 0.4
         planet_jobs_society_research_produces_add = 0.4
         planet_jobs_engineering_research_produces_add = 0.4
-        planet_jobs_unity_produces_mult = 0.4
+        planet_jobs_unity_produces_add = 0.4
         mult = trigger:has_total_skill
     }
     # 行政官-星球
