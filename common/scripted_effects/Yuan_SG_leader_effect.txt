@@ -41,7 +41,7 @@ yuan_sg_leader_planet_effect = {
                 }
                 # 对最后创建的领袖设置属性
                 last_created_leader = {
-                    set_skill = 1 # 设置技能为拥有者统治者的基础技能
+                    set_skill = owner.ruler.trigger:has_base_skill # 设置技能为拥有者统治者的基础技能
                     set_leader_flag = yuan_sg_leader_node # 设置领袖标志
                     set_leader_flag = yuan_sg_leader_plant
                     set_leader_flag = immune_to_negative_traits # 设置免疫负面特性标志
@@ -83,7 +83,7 @@ yuan_sg_leader_planet_effect = {
                 }
                 # 对最后创建的领袖设置属性
                 last_created_leader = {
-                    set_skill = 1
+                    set_skill = owner.ruler.trigger:has_base_skill
                     set_leader_flag = yuan_sg_leader_plant
                     set_leader_flag = yuan_sg_leader_node
                     set_leader_flag = immune_to_negative_traits
@@ -125,7 +125,7 @@ yuan_sg_leader_planet_effect = {
                 }
                 # 对最后创建的领袖设置属性
                 last_created_leader = {
-                    set_skill = 1
+                    set_skill = owner.ruler.trigger:has_base_skill
                     set_leader_flag = yuan_sg_leader_node
                     set_leader_flag = yuan_sg_leader_plant
                     set_leader_flag = immune_to_negative_traits
@@ -190,7 +190,7 @@ yuan_sg_leader_science_ship_effect = {
                 name = yuan_sg_leader_scientist_node
             }
             last_created_leader = {
-                set_skill = 1
+                set_skill = owner.ruler.trigger:has_base_skill
                 set_leader_flag = yuan_sg_leader_node
                 set_leader_flag = yuan_sg_leader_science_ship
                 set_leader_flag = immune_to_negative_traits
@@ -227,7 +227,7 @@ yuan_sg_leader_military_ship_effect = {
                 name = yuan_sg_leader_commander_node
             }
             last_created_leader = {
-                set_skill = 1
+                set_skill = owner.ruler.trigger:has_base_skill
                 set_leader_flag = yuan_sg_leader_node
                 set_leader_flag = yuan_sg_leader_military_ship
                 set_leader_flag = immune_to_negative_traits
@@ -280,7 +280,7 @@ yuan_sg_leader_army_ship_effect = {
                 name = yuan_sg_leader_commander_node
             }
             last_created_leader = {
-                set_skill = 1
+                set_skill = owner.ruler.trigger:has_base_skill
                 set_leader_flag = yuan_sg_leader_node
                 set_leader_flag = yuan_sg_leader_fleet_ship
                 set_leader_flag = immune_to_negative_traits
@@ -332,7 +332,7 @@ yuan_sg_leader_army_effect = {
                 name = yuan_sg_leader_commander_node
             }
             last_created_leader = {
-                set_skill = 1
+                set_skill = owner.ruler.trigger:has_base_skill
                 set_leader_flag = yuan_sg_leader_node
                 set_leader_flag = yuan_sg_leader_army
                 set_leader_flag = immune_to_negative_traits
@@ -366,14 +366,14 @@ yuan_sg_leader_council_effect = {
     }
 }
 # 等级同步
-# yuan_sg_leader_level_effect = {
-#     every_owned_leader = {
-#         limit = {
-#             has_leader_flag = yuan_sg_leader_node
-#         }
-#         set_skill = 1
-#     }
-# }
+ yuan_sg_leader_level_effect = {
+     every_owned_leader = {
+         limit = {
+             has_leader_flag = yuan_sg_leader_node
+         }
+         set_skill = owner.ruler.trigger:has_base_skill
+     }
+ }
 # 星球总督转换
 yuan_sg_leader_planet_class_effect = {
     every_owned_planet = {
@@ -395,7 +395,7 @@ yuan_sg_leader_planet_class_effect = {
                     trait = leader_trait_sg_artifact
                     show_message = no
                 }
-                set_skill = 1
+                set_skill = owner.ruler.trigger:has_base_skill
             }
         }
         else_if = {
@@ -410,7 +410,7 @@ yuan_sg_leader_planet_class_effect = {
                     trait = leader_trait_sg_artifact
                     show_message = no
                 }
-                set_skill = 1
+                set_skill = owner.ruler.trigger:has_base_skill
             }
         }
         else_if = {
@@ -425,7 +425,7 @@ yuan_sg_leader_planet_class_effect = {
                     trait = leader_trait_sg_artifact
                     show_message = no
                 }
-                set_skill = 1
+                set_skill = owner.ruler.trigger:has_base_skill
             }
         }
     }

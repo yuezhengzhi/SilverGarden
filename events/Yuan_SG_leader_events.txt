@@ -99,7 +99,7 @@ country_event = {
             }
         }
         # 同步等级
-        # yuan_sg_leader_level_effect = yes
+        yuan_sg_leader_level_effect = yes
         # 空闲领袖清理
         yuan_sg_leader_idle_effect = yes
         # 星球领袖转换

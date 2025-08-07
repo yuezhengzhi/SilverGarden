@@ -42,11 +42,11 @@ leader_trait_sg_artifact = {
 
     # 通用效果
     self_modifier = {
-        species_leader_exp_gain = 1
+        species_leader_exp_gain = -10
         leaders_unity_upkeep_mult = -1
     }
     triggered_self_modifier = {
-        leaders_influence_upkeep_mult = 0.5
+        leaders_influence_upkeep_mult = 0.25
         mult = trigger:has_total_skill
     }
     inline_script = {
