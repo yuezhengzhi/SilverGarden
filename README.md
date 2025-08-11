@@ -8,6 +8,9 @@ SilverGarden 是一款为 Stellaris（群星）设计的模组，用于实现作
 - 领导者相关的专属事件与效果
 - 自定义领导者创建、赋能与成长机制
 
+## 未来内容 / TODO
+- 总结DMCA相关内容制作特色民政/事件
+
 ## 目录结构 / Directory Structure
 ```
 SilverGarden/
