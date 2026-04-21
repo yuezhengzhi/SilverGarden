@@ -108,6 +108,474 @@ country_event = {
         yuan_sg_leader_council_effect = yes
     }
 }
+
+# 选择同化目标（候选列表）
+country_event = {
+    id = yuan_sg_leader.10
+    title = yuan_sg_leader_assimilate_event_title
+    desc = yuan_sg_leader_assimilate_event_desc
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+    }
+    immediate = {
+        every_owned_leader = {
+            limit = {
+                has_leader_flag = yuan_sg_candidate_temp
+            }
+            remove_leader_flag = yuan_sg_candidate_temp
+        }
+        random_owned_leader = {
+            limit = {
+                NOR = {
+                    has_leader_flag = yuan_sg_leader_node
+                    has_ruler_trait = leader_trait_sg_orthis
+                    has_leader_flag = renowned_leader
+                    has_leader_flag = legendary_leader
+                }
+            }
+            set_leader_flag = yuan_sg_candidate_temp
+            save_event_target_as = yuan_sg_candidate_1
+        }
+        random_owned_leader = {
+            limit = {
+                NOR = {
+                    has_leader_flag = yuan_sg_leader_node
+                    has_ruler_trait = leader_trait_sg_orthis
+                    has_leader_flag = renowned_leader
+                    has_leader_flag = legendary_leader
+                    has_leader_flag = yuan_sg_candidate_temp
+                }
+            }
+            set_leader_flag = yuan_sg_candidate_temp
+            save_event_target_as = yuan_sg_candidate_2
+        }
+        random_owned_leader = {
+            limit = {
+                NOR = {
+                    has_leader_flag = yuan_sg_leader_node
+                    has_ruler_trait = leader_trait_sg_orthis
+                    has_leader_flag = renowned_leader
+                    has_leader_flag = legendary_leader
+                    has_leader_flag = yuan_sg_candidate_temp
+                }
+            }
+            set_leader_flag = yuan_sg_candidate_temp
+            save_event_target_as = yuan_sg_candidate_3
+        }
+        random_owned_leader = {
+            limit = {
+                NOR = {
+                    has_leader_flag = yuan_sg_leader_node
+                    has_ruler_trait = leader_trait_sg_orthis
+                    has_leader_flag = renowned_leader
+                    has_leader_flag = legendary_leader
+                    has_leader_flag = yuan_sg_candidate_temp
+                }
+            }
+            set_leader_flag = yuan_sg_candidate_temp
+            save_event_target_as = yuan_sg_candidate_4
+        }
+        random_owned_leader = {
+            limit = {
+                NOR = {
+                    has_leader_flag = yuan_sg_leader_node
+                    has_ruler_trait = leader_trait_sg_orthis
+                    has_leader_flag = renowned_leader
+                    has_leader_flag = legendary_leader
+                    has_leader_flag = yuan_sg_candidate_temp
+                }
+            }
+            set_leader_flag = yuan_sg_candidate_temp
+            save_event_target_as = yuan_sg_candidate_5
+        }
+        random_owned_leader = {
+            limit = {
+                NOR = {
+                    has_leader_flag = yuan_sg_leader_node
+                    has_ruler_trait = leader_trait_sg_orthis
+                    has_leader_flag = renowned_leader
+                    has_leader_flag = legendary_leader
+                    has_leader_flag = yuan_sg_candidate_temp
+                }
+            }
+            set_leader_flag = yuan_sg_candidate_temp
+            save_event_target_as = yuan_sg_candidate_6
+        }
+        random_owned_leader = {
+            limit = {
+                NOR = {
+                    has_leader_flag = yuan_sg_leader_node
+                    has_ruler_trait = leader_trait_sg_orthis
+                    has_leader_flag = renowned_leader
+                    has_leader_flag = legendary_leader
+                    has_leader_flag = yuan_sg_candidate_temp
+                }
+            }
+            set_leader_flag = yuan_sg_candidate_temp
+            save_event_target_as = yuan_sg_candidate_7
+        }
+        random_owned_leader = {
+            limit = {
+                NOR = {
+                    has_leader_flag = yuan_sg_leader_node
+                    has_ruler_trait = leader_trait_sg_orthis
+                    has_leader_flag = renowned_leader
+                    has_leader_flag = legendary_leader
+                    has_leader_flag = yuan_sg_candidate_temp
+                }
+            }
+            set_leader_flag = yuan_sg_candidate_temp
+            save_event_target_as = yuan_sg_candidate_8
+        }
+        random_owned_leader = {
+            limit = {
+                NOR = {
+                    has_leader_flag = yuan_sg_leader_node
+                    has_ruler_trait = leader_trait_sg_orthis
+                    has_leader_flag = renowned_leader
+                    has_leader_flag = legendary_leader
+                    has_leader_flag = yuan_sg_candidate_temp
+                }
+            }
+            set_leader_flag = yuan_sg_candidate_temp
+            save_event_target_as = yuan_sg_candidate_9
+        }
+        random_owned_leader = {
+            limit = {
+                NOR = {
+                    has_leader_flag = yuan_sg_leader_node
+                    has_ruler_trait = leader_trait_sg_orthis
+                    has_leader_flag = renowned_leader
+                    has_leader_flag = legendary_leader
+                    has_leader_flag = yuan_sg_candidate_temp
+                }
+            }
+            set_leader_flag = yuan_sg_candidate_temp
+            save_event_target_as = yuan_sg_candidate_10
+        }
+    }
+
+    option = {
+        name = yuan_sg_leader_assimilate_pick_1
+        trigger = {
+            exists = event_target:yuan_sg_candidate_1
+        }
+        event_target:yuan_sg_candidate_1 = {
+            save_event_target_as = yuan_sg_assimilate_target
+        }
+        country_event = {
+            id = yuan_sg_leader.11
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_pick_2
+        trigger = {
+            exists = event_target:yuan_sg_candidate_2
+        }
+        event_target:yuan_sg_candidate_2 = {
+            save_event_target_as = yuan_sg_assimilate_target
+        }
+        country_event = {
+            id = yuan_sg_leader.11
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_pick_3
+        trigger = {
+            exists = event_target:yuan_sg_candidate_3
+        }
+        event_target:yuan_sg_candidate_3 = {
+            save_event_target_as = yuan_sg_assimilate_target
+        }
+        country_event = {
+            id = yuan_sg_leader.11
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_pick_4
+        trigger = {
+            exists = event_target:yuan_sg_candidate_4
+        }
+        event_target:yuan_sg_candidate_4 = {
+            save_event_target_as = yuan_sg_assimilate_target
+        }
+        country_event = {
+            id = yuan_sg_leader.11
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_pick_5
+        trigger = {
+            exists = event_target:yuan_sg_candidate_5
+        }
+        event_target:yuan_sg_candidate_5 = {
+            save_event_target_as = yuan_sg_assimilate_target
+        }
+        country_event = {
+            id = yuan_sg_leader.11
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_pick_6
+        trigger = {
+            exists = event_target:yuan_sg_candidate_6
+        }
+        event_target:yuan_sg_candidate_6 = {
+            save_event_target_as = yuan_sg_assimilate_target
+        }
+        country_event = {
+            id = yuan_sg_leader.11
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_pick_7
+        trigger = {
+            exists = event_target:yuan_sg_candidate_7
+        }
+        event_target:yuan_sg_candidate_7 = {
+            save_event_target_as = yuan_sg_assimilate_target
+        }
+        country_event = {
+            id = yuan_sg_leader.11
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_pick_8
+        trigger = {
+            exists = event_target:yuan_sg_candidate_8
+        }
+        event_target:yuan_sg_candidate_8 = {
+            save_event_target_as = yuan_sg_assimilate_target
+        }
+        country_event = {
+            id = yuan_sg_leader.11
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_pick_9
+        trigger = {
+            exists = event_target:yuan_sg_candidate_9
+        }
+        event_target:yuan_sg_candidate_9 = {
+            save_event_target_as = yuan_sg_assimilate_target
+        }
+        country_event = {
+            id = yuan_sg_leader.11
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_pick_10
+        trigger = {
+            exists = event_target:yuan_sg_candidate_10
+        }
+        event_target:yuan_sg_candidate_10 = {
+            save_event_target_as = yuan_sg_assimilate_target
+        }
+        country_event = {
+            id = yuan_sg_leader.11
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_refresh
+        country_event = {
+            id = yuan_sg_leader.10
+            days = 1
+        }
+    }
+    option = {
+        name = yuan_sg_leader_assimilate_cancel
+        every_owned_leader = {
+            limit = {
+                has_leader_flag = yuan_sg_candidate_temp
+            }
+            remove_leader_flag = yuan_sg_candidate_temp
+        }
+    }
+}
+
+# 执行同化并强化人偶
+country_event = {
+    id = yuan_sg_leader.11
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+        exists = event_target:yuan_sg_assimilate_target
+    }
+    immediate = {
+        every_owned_leader = {
+            limit = {
+                has_leader_flag = yuan_sg_candidate_temp
+            }
+            remove_leader_flag = yuan_sg_candidate_temp
+        }
+
+        if = {
+            limit = {
+                event_target:yuan_sg_assimilate_target = {
+                    leader_class = commander
+                }
+            }
+            if = {
+                limit = {
+                    event_target:yuan_sg_assimilate_target = {
+                        has_base_skill >= 8
+                    }
+                }
+                every_owned_leader = {
+                    limit = {
+                        has_leader_flag = yuan_sg_leader_node
+                        leader_class = commander
+                    }
+                    add_skill_without_trait_selection = 3
+                }
+            }
+            else_if = {
+                limit = {
+                    event_target:yuan_sg_assimilate_target = {
+                        has_base_skill >= 5
+                    }
+                }
+                every_owned_leader = {
+                    limit = {
+                        has_leader_flag = yuan_sg_leader_node
+                        leader_class = commander
+                    }
+                    add_skill_without_trait_selection = 2
+                }
+            }
+            else = {
+                every_owned_leader = {
+                    limit = {
+                        has_leader_flag = yuan_sg_leader_node
+                        leader_class = commander
+                    }
+                    add_skill_without_trait_selection = 1
+                }
+            }
+        }
+
+        else_if = {
+            limit = {
+                event_target:yuan_sg_assimilate_target = {
+                    leader_class = scientist
+                }
+            }
+            if = {
+                limit = {
+                    event_target:yuan_sg_assimilate_target = {
+                        has_base_skill >= 8
+                    }
+                }
+                every_owned_leader = {
+                    limit = {
+                        has_leader_flag = yuan_sg_leader_node
+                        leader_class = scientist
+                    }
+                    add_skill_without_trait_selection = 3
+                }
+            }
+            else_if = {
+                limit = {
+                    event_target:yuan_sg_assimilate_target = {
+                        has_base_skill >= 5
+                    }
+                }
+                every_owned_leader = {
+                    limit = {
+                        has_leader_flag = yuan_sg_leader_node
+                        leader_class = scientist
+                    }
+                    add_skill_without_trait_selection = 2
+                }
+            }
+            else = {
+                every_owned_leader = {
+                    limit = {
+                        has_leader_flag = yuan_sg_leader_node
+                        leader_class = scientist
+                    }
+                    add_skill_without_trait_selection = 1
+                }
+            }
+        }
+
+        else_if = {
+            limit = {
+                event_target:yuan_sg_assimilate_target = {
+                    leader_class = official
+                }
+            }
+            if = {
+                limit = {
+                    event_target:yuan_sg_assimilate_target = {
+                        has_base_skill >= 8
+                    }
+                }
+                every_owned_leader = {
+                    limit = {
+                        has_leader_flag = yuan_sg_leader_node
+                        leader_class = official
+                    }
+                    add_skill_without_trait_selection = 3
+                }
+            }
+            else_if = {
+                limit = {
+                    event_target:yuan_sg_assimilate_target = {
+                        has_base_skill >= 5
+                    }
+                }
+                every_owned_leader = {
+                    limit = {
+                        has_leader_flag = yuan_sg_leader_node
+                        leader_class = official
+                    }
+                    add_skill_without_trait_selection = 2
+                }
+            }
+            else = {
+                every_owned_leader = {
+                    limit = {
+                        has_leader_flag = yuan_sg_leader_node
+                        leader_class = official
+                    }
+                    add_skill_without_trait_selection = 1
+                }
+            }
+        }
+
+        event_target:yuan_sg_assimilate_target = {
+            kill_leader = {
+                show_notification = no
+            }
+        }
+
+        # 同化后立即执行一轮人偶补位与同步，减少岗位空窗期
+        yuan_sg_leader_military_ship_effect = yes
+        yuan_sg_leader_army_ship_effect = yes
+        yuan_sg_leader_science_ship_effect = yes
+        yuan_sg_leader_planet_effect = yes
+        yuan_sg_leader_army_effect = yes
+        yuan_sg_leader_council_effect = yes
+        yuan_sg_leader_level_effect = yes
+
+        country_event = {
+            id = yuan_sg_leader.12
+        }
+    }
+}
+
+# 同化完成提示
+country_event = {
+    id = yuan_sg_leader.12
+    title = yuan_sg_leader_assimilate_done_title
+    desc = yuan_sg_leader_assimilate_done_desc
+    is_triggered_only = yes
+    option = {
+        name = OK
+    }
+}
 # 统治者肖像替换
 country_event = {
     id = yuan_sg_leader.2

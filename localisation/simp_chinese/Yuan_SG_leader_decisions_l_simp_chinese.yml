@@ -1,9 +1,9 @@
-﻿l_simp_chinese:
+﻿﻿l_simp_chinese:
  yuan_sg_leader_planet_official_decisions: "行政总督"
- yuan_sg_leader_planet_official_decisions_desc: "将人偶属性调节至行政总督"
+ yuan_sg_leader_planet_official_decisions_desc: "激活人偶节点的“行政”人格覆写协议。它将变得冷静、高效，以钢铁般的逻辑执行帝国的每一项律令。"
  yuan_sg_leader_planet_scientist_decisions: "科研总督"
- yuan_sg_leader_planet_scientist_decisions_desc: "将人偶属性调节至科研总督"
+ yuan_sg_leader_planet_scientist_decisions_desc: "激活人偶节点的“科研”人格覆写协议。它将拥有永不枯竭的好奇心，去探寻宇宙的真理，只为解答那个永恒的疑问：我们，因何而存在？"
  yuan_sg_leader_planet_commander_decisions: "军事总督"
- yuan_sg_leader_planet_commander_decisions_desc: "将人偶属性调节至军事总督"
+ yuan_sg_leader_planet_commander_decisions_desc: "激活人偶节点的“军事”人格覆写协议。它的情感回路将被愤怒与守护的意志主导，成为一具冷酷而强大的战争兵器。"
  yuan_sg_leader_planet_none_decisions: "自主星球"
- yuan_sg_leader_planet_none_decisions_desc: "销毁星球上的人偶"
+ yuan_sg_leader_planet_none_decisions_desc: "销毁该星球上所有的人偶节点。我们决定，将这颗星球的命运交还给“不完美”的有机生命，或是纯粹的寂静。"
