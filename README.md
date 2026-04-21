@@ -28,9 +28,9 @@ SilverGarden/
 ```
 
 ## 兼容性 / Compatibility
-- 支持 Stellaris 4.0.21 版本
+- 支持 Stellaris 4.* 版本（目前游戏更新均未对mod涉及代码相关进行更改）
 - 主要影响领导者、事件与特质系统
-- 
+
 ## 鸣谢 / Credits
 - stellaris及其创作团队
 - 灵感与部分文本来源于社区与官方内容
