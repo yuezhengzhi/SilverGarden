@@ -11,6 +11,21 @@ SilverGarden 是一款为 Stellaris（群星）设计的模组，用于实现作
 ## 未来内容 / TODO
 - 总结DMCA相关内容制作特色民政/事件
 
+## 结构优化测试分支 / Refactor Test Branch
+- 分支名: `test/refactor-assimilation-structure`
+- 目标: 在不改变现有数值与玩法结果的前提下，优化同化流程脚本结构，便于后续维护与平衡调整。
+- 本次重构点:
+	- 将同化强化逻辑从 `events` 抽离到 `common/scripted_effects`。
+	- 将同化后的即时补位与同步逻辑抽离为独立效果。
+	- 保持现有经验分档与职业分支的强度表现不变。
+
+## 游玩对比建议 / Playtest Comparison
+- 对比分支: `master` vs `test/refactor-assimilation-structure`
+- 推荐观察项:
+	- 同化后人偶成长幅度是否一致
+	- 同化后岗位补位速度是否一致
+	- 事件触发稳定性与日志报错情况
+
 ## 目录结构 / Directory Structure
 ```
 SilverGarden/

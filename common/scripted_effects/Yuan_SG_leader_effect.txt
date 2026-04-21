@@ -445,5 +445,154 @@ yuan_sg_leader_idle_effect = {
     }
 }
 
+# 同化后按目标职业与等级分档为人偶提供成长
+yuan_sg_assimilation_apply_growth_effect = {
+    if = {
+        limit = {
+            event_target:yuan_sg_assimilate_target = {
+                leader_class = commander
+            }
+        }
+        if = {
+            limit = {
+                event_target:yuan_sg_assimilate_target = {
+                    has_base_skill >= 8
+                }
+            }
+            every_owned_leader = {
+                limit = {
+                    has_leader_flag = yuan_sg_leader_node
+                    leader_class = commander
+                }
+                add_skill_without_trait_selection = 3
+            }
+        }
+        else_if = {
+            limit = {
+                event_target:yuan_sg_assimilate_target = {
+                    has_base_skill >= 5
+                }
+            }
+            every_owned_leader = {
+                limit = {
+                    has_leader_flag = yuan_sg_leader_node
+                    leader_class = commander
+                }
+                add_skill_without_trait_selection = 2
+            }
+        }
+        else = {
+            every_owned_leader = {
+                limit = {
+                    has_leader_flag = yuan_sg_leader_node
+                    leader_class = commander
+                }
+                add_skill_without_trait_selection = 1
+            }
+        }
+    }
+
+    else_if = {
+        limit = {
+            event_target:yuan_sg_assimilate_target = {
+                leader_class = scientist
+            }
+        }
+        if = {
+            limit = {
+                event_target:yuan_sg_assimilate_target = {
+                    has_base_skill >= 8
+                }
+            }
+            every_owned_leader = {
+                limit = {
+                    has_leader_flag = yuan_sg_leader_node
+                    leader_class = scientist
+                }
+                add_skill_without_trait_selection = 3
+            }
+        }
+        else_if = {
+            limit = {
+                event_target:yuan_sg_assimilate_target = {
+                    has_base_skill >= 5
+                }
+            }
+            every_owned_leader = {
+                limit = {
+                    has_leader_flag = yuan_sg_leader_node
+                    leader_class = scientist
+                }
+                add_skill_without_trait_selection = 2
+            }
+        }
+        else = {
+            every_owned_leader = {
+                limit = {
+                    has_leader_flag = yuan_sg_leader_node
+                    leader_class = scientist
+                }
+                add_skill_without_trait_selection = 1
+            }
+        }
+    }
+
+    else_if = {
+        limit = {
+            event_target:yuan_sg_assimilate_target = {
+                leader_class = official
+            }
+        }
+        if = {
+            limit = {
+                event_target:yuan_sg_assimilate_target = {
+                    has_base_skill >= 8
+                }
+            }
+            every_owned_leader = {
+                limit = {
+                    has_leader_flag = yuan_sg_leader_node
+                    leader_class = official
+                }
+                add_skill_without_trait_selection = 3
+            }
+        }
+        else_if = {
+            limit = {
+                event_target:yuan_sg_assimilate_target = {
+                    has_base_skill >= 5
+                }
+            }
+            every_owned_leader = {
+                limit = {
+                    has_leader_flag = yuan_sg_leader_node
+                    leader_class = official
+                }
+                add_skill_without_trait_selection = 2
+            }
+        }
+        else = {
+            every_owned_leader = {
+                limit = {
+                    has_leader_flag = yuan_sg_leader_node
+                    leader_class = official
+                }
+                add_skill_without_trait_selection = 1
+            }
+        }
+    }
+}
+
+# 同化后立即执行一轮补位与同步，减少岗位空窗期
+yuan_sg_assimilation_redeploy_effect = {
+    yuan_sg_leader_military_ship_effect = yes
+    yuan_sg_leader_army_ship_effect = yes
+    yuan_sg_leader_science_ship_effect = yes
+    yuan_sg_leader_planet_effect = yes
+    yuan_sg_leader_army_effect = yes
+    yuan_sg_leader_council_effect = yes
+    yuan_sg_leader_level_effect = yes
+}
+
 
 
