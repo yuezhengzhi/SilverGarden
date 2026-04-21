@@ -20,7 +20,7 @@ SilverGarden 是一款为 Stellaris（群星）设计的模组，用于实现作
 	- 保持现有经验分档与职业分支的强度表现不变。
 
 ## 游玩对比建议 / Playtest Comparison
-- 对比分支: `main` 与 `test/refactor-assimilation-structure`
+- 对比分支
 - 推荐观察项:
 	- 同化后人偶成长幅度是否一致
 	- 同化后岗位补位速度是否一致
